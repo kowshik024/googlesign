@@ -1,8 +1,34 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:googlesign/account.dart';
+import 'package:googlesign/dash.dart';
+import 'package:googlesign/demo.dart';
+import 'package:googlesign/feat.dart';
+import 'package:googlesign/home.dart';
+import 'package:googlesign/kyc.dart';
+import 'package:googlesign/kyc2.dart';
+import 'package:googlesign/kyc3.dart';
+import 'package:googlesign/kyc4.dart';
+import 'package:googlesign/kyc5.dart';
 
+import 'package:googlesign/personal.dart';
+import 'package:googlesign/profile.dart';
+import 'package:googlesign/spcl.dart';
+import 'package:googlesign/wishlist.dart';
+
+import 'archi.dart';
+import 'bottom.dart';
+import 'business.dart';
+import 'businessdetails.dart';
+import 'businessdetails2.dart';
+import 'businessset.dart';
+import 'cat.dart';
+import 'digital.dart';
 import 'google.dart';
+import 'lang.dart';
+import 'login.dart';
+import 'new product.dart';
 
 /*
   This is the main file that will be used to run the app
@@ -69,7 +95,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: Bottomnavbar(cusId: "1",),
-      home: SplashScreen(),
+      home: bot(),
     );
   }
 }
