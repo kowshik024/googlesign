@@ -43,7 +43,7 @@ class _PersonalDetailScreenState extends State<PersonalDetailScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Tab Section
+
             Row(
               children: [
                 Expanded(
@@ -70,8 +70,6 @@ class _PersonalDetailScreenState extends State<PersonalDetailScreen> {
               ],
             ),
             SizedBox(height: 20),
-
-            // Image Upload Section
             GestureDetector(
               onTap: _pickImage,
               child: Padding(
@@ -103,7 +101,6 @@ class _PersonalDetailScreenState extends State<PersonalDetailScreen> {
             ),
             SizedBox(height: 20),
 
-            // Input Fields
             TextFormField(
               decoration: InputDecoration(
                   hintText: "Enter First Name",border: OutlineInputBorder(
@@ -152,8 +149,6 @@ class _PersonalDetailScreenState extends State<PersonalDetailScreen> {
               ),
             ),
             SizedBox(height: 20),
-
-            // Save Button
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(

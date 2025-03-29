@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:googlesign/search.dart';
 
 import 'account.dart';
 import 'login.dart';
@@ -124,6 +125,9 @@ class _Home_screenState extends State<demo> {
 
                     ),
                     child: TextFormField(
+                      onTap: (){
+                        Navigator.push(context , MaterialPageRoute(builder: (context)=>SearchPage()));
+                      },
                       decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'Search here',

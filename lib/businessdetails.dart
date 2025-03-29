@@ -162,7 +162,6 @@ class _BusinessDetailScreenState extends State<BusinessDetailScreen1> {
               TextButton(onPressed: _addMobileNumber, child: Text("+ Add Another Mobile Number")),
               SizedBox(height: 10),
 
-              // WhatsApp Number
               Row(
                 children: [
                   DropdownButton<String>(

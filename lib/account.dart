@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
+import 'package:googlesign/bottom.dart';
 import 'package:googlesign/businessset.dart';
 import 'package:googlesign/dash.dart';
+import 'package:googlesign/msg.dart';
 import 'package:googlesign/new%20product.dart';
 import 'package:googlesign/spcl.dart';
 import 'package:googlesign/wishlist.dart';
 
 import 'archi.dart';
 import 'digital.dart';
+import 'help.dart';
 import 'lang.dart';
+import 'login.dart';
 
 class UserProfile extends StatefulWidget {
   const UserProfile({super.key});
@@ -51,7 +55,8 @@ class _UserProfileState extends State<UserProfile> {
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
               ),
               onPressed: () {
-                Navigator.pop(context);
+
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>Login_Screen()));
 
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(content: Text("Logged out successfully")),
@@ -117,15 +122,11 @@ class _UserProfileState extends State<UserProfile> {
             Stack(
               alignment: Alignment.topCenter,
               children: [
-                // Main background
                 Container(
                   height: 310,
-
                 ),
-
-                // Profile header with rounded bottom
                 Container(
-                  height: 250, // Increased height for better spacing
+                  height: 250,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
@@ -147,7 +148,7 @@ class _UserProfileState extends State<UserProfile> {
                       Padding(
                           padding: const EdgeInsets.only(bottom: 150),
                           child: IconButton(onPressed: (){
-                            Navigator.pop(context);
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>bot()));
                           }, icon: Icon(Icons.close))
                       ),
                       Padding(
@@ -194,9 +195,8 @@ class _UserProfileState extends State<UserProfile> {
                     ],),
                 ),
 
-                // Floating Box (Hello, Welcome!)
                 Positioned(
-                  top: 150, // Positioned below the header
+                  top: 150,
                   child: Container(
                     width: 350,
                     height: 150,
@@ -358,6 +358,12 @@ class _UserProfileState extends State<UserProfile> {
                                 Navigator.push(context, MaterialPageRoute(builder: (context)=>dashboard()));;
                                 break; case 'Special Day Poster':
                                 Navigator.push(context, MaterialPageRoute(builder: (context)=>Special_day()));;
+                                break;
+                                case 'My Message':
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=>MessagesScreen()));;
+                                break;
+                                case 'Feedback & Support':
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=>HelpScreen()));;
                                 break;
 
 

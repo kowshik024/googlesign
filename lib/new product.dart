@@ -118,8 +118,6 @@ class _AddProductScreenState extends State<AddProductScreen> {
                 ),
               ),
               SizedBox(height: 20),
-
-              // Category Dropdown
               DropdownButtonFormField<String>(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -148,8 +146,6 @@ class _AddProductScreenState extends State<AddProductScreen> {
                 ),
               ),
               SizedBox(height: 10),
-
-              // Description
               TextFormField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -199,8 +195,6 @@ class _AddProductScreenState extends State<AddProductScreen> {
                 ],
               ),
               SizedBox(height: 10),
-
-              // Shipping Details
               TextFormField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -209,8 +203,6 @@ class _AddProductScreenState extends State<AddProductScreen> {
                 maxLines: 2,
               ),
               SizedBox(height: 10),
-
-              // Discounts
               TextFormField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -218,8 +210,6 @@ class _AddProductScreenState extends State<AddProductScreen> {
                 ),
               ),
               SizedBox(height: 20),
-
-              // Buttons
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -234,8 +224,6 @@ class _AddProductScreenState extends State<AddProductScreen> {
                 ],
               ),
               SizedBox(height: 20),
-
-              // Upload Product Button
               Center(
                 child: ElevatedButton.icon(
                   onPressed: () {},

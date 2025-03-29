@@ -15,6 +15,7 @@ import 'package:googlesign/kyc5.dart';
 import 'package:googlesign/personal.dart';
 import 'package:googlesign/profile.dart';
 import 'package:googlesign/spcl.dart';
+import 'package:googlesign/splash.dart';
 import 'package:googlesign/wishlist.dart';
 
 import 'archi.dart';
@@ -26,8 +27,10 @@ import 'businessset.dart';
 import 'cat.dart';
 import 'digital.dart';
 import 'google.dart';
+import 'help.dart';
 import 'lang.dart';
 import 'login.dart';
+import 'msg.dart';
 import 'new product.dart';
 
 /*
@@ -95,7 +98,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: Bottomnavbar(cusId: "1",),
-      home: bot(),
+      home: splash(),
     );
   }
 }

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:googlesign/bottom.dart';
 import 'package:googlesign/personal.dart';
+
+import 'cat.dart';
 
 
 
@@ -23,7 +26,7 @@ class _architectureState extends State<architecture> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: IconButton(onPressed: (){
-          Navigator.pop(context);
+      Navigator.push(context , MaterialPageRoute(builder: (context)=>category()));
         }, icon: Icon(Icons.arrow_back)),
         title: Text("Architecture",style: GoogleFonts.lato(fontSize: 22,fontWeight: FontWeight.w400,color: Colors.purple),),
         actions: [

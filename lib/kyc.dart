@@ -42,7 +42,6 @@ class _KYCVerificationScreenState extends State<KYCVerificationScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Image or illustration
             Center(
               child: Container(
                 child: Image.asset(
@@ -51,8 +50,6 @@ class _KYCVerificationScreenState extends State<KYCVerificationScreen> {
               ),
             ),
             SizedBox(height: 16),
-
-            // Title
             Center(
               child: Text(
                 "Let's Verify KYC",
@@ -60,8 +57,6 @@ class _KYCVerificationScreenState extends State<KYCVerificationScreen> {
               ),
             ),
             SizedBox(height: 16),
-
-            // Business Name Input
             Text("Business Name"),
             SizedBox(height: 4),
             TextField(
@@ -72,8 +67,6 @@ class _KYCVerificationScreenState extends State<KYCVerificationScreen> {
               ),
             ),
             SizedBox(height: 16),
-
-            // Contract Status
             Text(
               "Completed the steps below to get verified",
               style: TextStyle(fontSize: 14),
@@ -93,8 +86,6 @@ class _KYCVerificationScreenState extends State<KYCVerificationScreen> {
             ),
 
             SizedBox(height: 16),
-
-            // Verification Steps
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -145,8 +136,6 @@ class _KYCVerificationScreenState extends State<KYCVerificationScreen> {
               ],
             ),
             SizedBox(height: 30),
-
-            // Terms & Conditions
             Center(
               child: Text(
                 "Read KYC Terms & Conditions",
@@ -155,7 +144,6 @@ class _KYCVerificationScreenState extends State<KYCVerificationScreen> {
             ),
             SizedBox(height: 130),
 
-            // Get Verified Button
             Center(
               child: SizedBox(
                 width: 330,
